@@ -61,6 +61,18 @@ a {
   }
 }
 
+.project-list {
+  background: pink;
+  li {
+    background: red;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+}
+
 
 .clearfix::after {
   content: " ";

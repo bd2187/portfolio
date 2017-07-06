@@ -492,6 +492,20 @@ a {
   font-size: 1.5em;
 }
 
+.project-list {
+  background: pink;
+}
+
+.project-list li {
+  background: red;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.project-list .thumbnail {
+  width: 100%;
+}
+
 .clearfix::after {
   content: " ";
   display: table;
