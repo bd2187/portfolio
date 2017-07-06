@@ -26,10 +26,10 @@ function Project({title, thumbnail, tech, link, github}) {
       </div>
       <div className="project-info-box">
         <h3>{title}</h3>
+        <p>{tech.map(parseTech)}</p>
         <a href={github} target="_blank">
           <i className="fa fa-github" aria-hidden="true"></i>
         </a>
-        <p>{tech.map(parseTech)}</p>
       </div>
     </li>
   );

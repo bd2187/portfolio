@@ -6,6 +6,7 @@
 
 body {
   background: green;
+  padding-top: 34px;
 }
 
 h1, h2, h3, a, p {
@@ -28,6 +29,11 @@ a {
     justify-content: space-around;
     align-items: flex-start;
     background: orange;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
 
     a {
       display: inline-block;
@@ -71,7 +77,40 @@ a {
   .thumbnail {
     width: 100%;
   }
+  .fa-github {
+    font-size: 1.5em;
+  }
 }
+
+.profile-photo {
+  width: 50%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer {
+  background: pink;
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    a {
+      background: orange;
+      font-size: 2em;
+      display: inline-block;
+      padding: .3em;
+    }
+  }
+  p {
+    text-align: center;
+    margin: .5em 0;
+  }
+}
+
+.content {
+  min-height: calc(100vh - 108px);
+}
+
 
 
 .clearfix::after {

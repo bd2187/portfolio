@@ -4,7 +4,7 @@ import projects from '../data';
 
 function Work() {
   return (
-    <div>
+    <div className="work content">
       <ul className="project-list">
         {projects.map(function(project, index){
           return (
