@@ -1,16 +1,69 @@
 @import  'normalize';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: green;
-  box-sizing: border-box;
 }
 
 h1, h2, h3, a, p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   background: yellow;
   width: 95%;
   margin: 0 auto;
+}
+
+.nav-bar {
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: orange;
+
+    a {
+      display: inline-block;
+      padding: .5em;
+      color: #fff;
+      transition: color .5s;
+      &:hover {
+        color: blue;
+      }
+    } // end a
+  }
+
+  .active {
+    font-weight: bolder;
+  }
+}
+
+.banner {
+  background: orange;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  h1, h2 {
+    margin: .12em 0;
+    font-size: 1.5em;
+  }
+}
+
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
 }
