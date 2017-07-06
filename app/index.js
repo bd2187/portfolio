@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-
+import './styles/css/main.css';
 import App from './components/App';
-import Home from './components/Home';
-
-import './index.css';
 
 render (
   <App/>,

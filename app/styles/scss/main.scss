@@ -1,0 +1,16 @@
+@import  'normalize';
+
+body {
+  background: green;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, a, p {
+  margin: 0;
+}
+
+.container {
+  background: yellow;
+  width: 95%;
+  margin: 0 auto;
+}
