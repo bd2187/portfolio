@@ -12,6 +12,9 @@ function Work() {
               key={index}
               title={project.title}
               thumbnail={project.thumbnail}
+              link={project.link}
+              tech={project.tech}
+              github={project.github}
             />
           )
         })}
