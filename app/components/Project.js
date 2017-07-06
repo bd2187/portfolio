@@ -21,10 +21,10 @@ function Project({title, thumbnail, tech, link, github}) {
         <img src={require(`../assets/${thumbnail}`)} style={{width: '300px'}}/>
       </a>
       <h3>{title}</h3>
-      <a href={github} target="_blank">Github</a>
-      <p>
-        {tech.map(parseTech)}
-      </p>
+      <a href={github} target="_blank">
+        <i className="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <p>{tech.map(parseTech)}</p>
     </li>
   );
 }

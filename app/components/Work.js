@@ -8,14 +8,7 @@ function Work() {
       <ul>
         {projects.map(function(project, index){
           return (
-            <Project
-              key={index}
-              title={project.title}
-              thumbnail={project.thumbnail}
-              link={project.link}
-              tech={project.tech}
-              github={project.github}
-            />
+            <Project key={index} {...project}/>
           )
         })}
       </ul>
