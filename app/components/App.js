@@ -4,7 +4,6 @@ import Work from './Work';
 import About from './About';
 import Contact from './Contact';
 import Nav from './Nav';
-import Footer from './Footer';
 
 import {
   BrowserRouter as Router, Route,
@@ -24,7 +23,7 @@ class App extends Component {
             <Route path="/about" component={About}/>
             <Route path="/contact" component={Contact}/>
           </Switch>
-        <Footer />
+        <p className="footer">Copyright &copy; Brandon Dionisio 2017</p>
         </div>
       </Router>
     );

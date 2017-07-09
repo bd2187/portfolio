@@ -428,6 +428,12 @@ a {
   text-decoration: none;
 }
 
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
 .container {
   background: yellow;
   width: 95%;
@@ -522,11 +528,11 @@ a {
   margin: 0 auto;
 }
 
-.footer {
+.contact {
   background: pink;
 }
 
-.footer .footer-links {
+.contact .contact-links {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -536,24 +542,18 @@ a {
   justify-content: space-around;
 }
 
-.footer .footer-links a {
+.contact .contact-links a {
   background: orange;
   font-size: 2em;
   display: inline-block;
   padding: .3em;
 }
 
-.footer p {
+.footer {
   text-align: center;
-  margin: .5em 0;
 }
 
 .content {
-  min-height: calc(100vh - 108px);
-}
-
-.clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
+  min-height: calc(100vh - 18px);
+  padding: 1em 0;
 }

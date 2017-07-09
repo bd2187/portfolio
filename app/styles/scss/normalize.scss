@@ -440,3 +440,28 @@ th {
    padding: 0;
    list-style: none;
  }
+
+// ============= Default
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: green;
+  padding-top: 34px;
+}
+
+h1, h2, h3, a, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
