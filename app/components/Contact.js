@@ -18,7 +18,7 @@ class Contact extends Component {
           </li>
           <li>
             <a href="#">
-              <i className="fa fa-twitter" aria-hidden="true"></i>
+              <i className="fa fa-envelope-o" aria-hidden="true"></i>
             </a>
           </li>
         </ul>

@@ -72,14 +72,27 @@
 
 .contact {
   background: pink;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   .contact-links {
     display: flex;
     justify-content: space-around;
     a {
+      font-size: 3.12em;
       background: orange;
-      font-size: 2em;
       display: inline-block;
-      padding: .3em;
+
+      text-align: center;
+      vertical-align: center;
+      border-radius: 100%;
+      padding: .5em;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 }
