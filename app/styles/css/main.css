@@ -473,7 +473,7 @@ a {
 }
 
 .nav-bar .active {
-  font-weight: bolder;
+  border-bottom: 4px solid white;
 }
 
 .banner {
@@ -583,6 +583,7 @@ a {
 }
 
 .content {
-  min-height: calc(100vh - 18px);
+  min-height: calc(100vh - 52px);
+  /* 34px(Nav) + 18px(footer)*/
   padding: 1em 0;
 }

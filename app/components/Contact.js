@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// const nodemailer = require('nodemailer');
+import { Link } from 'react-router-dom';
 
 class Contact extends Component {
   render() {
@@ -7,19 +7,19 @@ class Contact extends Component {
       <div className="contact content">
         <ul className="contact-links">
           <li>
-            <a href="#">
-              <i className="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i className="fa fa-github" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
+            <a href="mailto:brandon.dionisio@yahoo.com">
               <i className="fa fa-envelope-o" aria-hidden="true"></i>
             </a>
+          </li>
+          <li>
+            <Link to="#" target="_blank">
+              <i className="fa fa-linkedin" aria-hidden="true"></i>
+            </Link>
+          </li>
+          <li>
+            <Link to="https://github.com/bd2187" target="_blank">
+              <i className="fa fa-github" aria-hidden="true"></i>
+            </Link>
           </li>
         </ul>
       </div>

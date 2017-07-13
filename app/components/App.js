@@ -6,7 +6,8 @@ import Contact from './Contact';
 import Nav from './Nav';
 
 import {
-  BrowserRouter as Router, Route,
+  BrowserRouter as Router,
+  Route,
   Switch
 } from 'react-router-dom';
 
