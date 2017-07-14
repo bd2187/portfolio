@@ -6,7 +6,8 @@ class Home extends Component {
       <div className="home content">
         <div className="banner">
           <h1>Brandon Dionisio</h1>
-          <h2>Frontend Developer</h2>
+          <div className="line"></div>
+          <h2>Developer - Creator - Learner</h2>
         </div>
       </div>
     );

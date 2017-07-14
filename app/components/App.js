@@ -27,7 +27,7 @@ class App extends Component {
         <p className="footer">
           {'brandon.dionisio.26@gmail.com'}
           <br />
-          {'Copyright &copy; Brandon Dionisio 2017'}
+          Copyright &copy; Brandon Dionisio 2017
         </p>
         </div>
       </Router>
