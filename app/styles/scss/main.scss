@@ -8,18 +8,21 @@ $transitionTime: .5s;
 
 
 .container {
-  // background: #fff;
   background: $offWhite;
-  // width: 95%;
   margin: 0 auto;
 }
 
 .category-title {
-  text-align: center;
-  margin: 1em 0;
+  width: 5em;
+  max-width: 210px;
+  margin: 1em auto;
   padding-bottom: .3em;
-  border-bottom: 2px solid $blue;
+
+  border-bottom: 3px solid $blue;
+
+  text-align: center;
   color: $blue;
+  font-size: 2.5em;
 }
 
 .nav-bar {
@@ -37,16 +40,16 @@ $transitionTime: .5s;
     a {
       display: inline-block;
       padding: .5em;
-      color: #fff;
+      color: $offWhite;
       transition: color $transitionTime;
       &:hover {
-        color: darken(#fff, 18%);
+        color: $blue;
       }
     } // end a
   }
 
   .active {
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid $offWhite;
   }
 }
 
@@ -67,26 +70,59 @@ $transitionTime: .5s;
 }
 
 .project-list {
+  li, a { color: $blue; }
   li {
-    background: red;
-    border: 1px solid black;
+    background: $lightRed;
     margin-bottom: 1em;
     text-align: center;
+    line-height: 1.2;
+
+    h3 { font-size: 1em; }
+    p { font-size: .8em; }
+
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.5);
+
+    transition: box-shadow $transitionTime;
+
+    &:hover {
+      box-shadow: 0px 3px 30px rgba(0,0,0,0.7);
+    }
   }
+
   .thumbnail {
     width: 100%;
   }
+
+  .project-info-box {
+    padding: .3em 0;
+  }
+
   .fa-github {
     font-size: 1.5em;
+    transition: color $transitionTime;
+    &:hover {
+      color: lighten($blue, 15%);
+    }
   }
 }
 
-.profile-photo {
-  width: 50%;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
+.about {
+  // background: green;
+  .profile-photo {
+    width: 40%;
+    border-radius: 50%;
+    display: block;
+    margin: 1em auto;
+  }
+
+  .about-me {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.112em;
+    color: $blue;
+  }
 }
+
 
 .contact {
   display: flex;
@@ -97,7 +133,7 @@ $transitionTime: .5s;
     display: flex;
     justify-content: space-around;
     a {
-      font-size: 3.12em;
+      font-size: 3em;
       color: $lightRed;
       background: $blue;
       display: inline-block;
@@ -132,7 +168,7 @@ $transitionTime: .5s;
 
 .content {
   // Sticky footer
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   min-height: calc(100vh - 84.78px); /* 34px(Nav) + 50.78px(footer)*/
   padding: 1em 0;

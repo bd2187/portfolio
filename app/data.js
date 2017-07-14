@@ -2,11 +2,11 @@
 
 var projects = [
   {
-    title: 'Weather App',
-    thumbnail: 'weather_app.png',
-    tech: ['HTML', 'CSS', 'Javascript', 'AJAX'],
-    link: 'https://bd2187.github.io/Local-Weather-App/',
-    github: 'https://github.com/bd2187/Local-Weather-App'
+    title: 'Youtube Clone',
+    thumbnail: 'youtube.png',
+    tech: ['HTML', 'CSS/SASS', 'Javascript', 'AJAX', 'React'],
+    link: 'https://react-tube-3e7aa.firebaseapp.com',
+    github: 'https://github.com/bd2187/react-tube'
   },
   {
     title: 'Twitch TV',
@@ -37,11 +37,11 @@ var projects = [
     github: 'https://github.com/bd2187/github-battle'
   },
   {
-    title: 'Youtube Clone',
-    thumbnail: 'youtube.png',
-    tech: ['HTML', 'CSS/SASS', 'Javascript', 'AJAX', 'React'],
-    link: 'https://react-tube-3e7aa.firebaseapp.com',
-    github: 'https://github.com/bd2187/react-tube'
+    title: 'Weather App',
+    thumbnail: 'weather_app.png',
+    tech: ['HTML', 'CSS', 'Javascript', 'AJAX'],
+    link: 'https://bd2187.github.io/Local-Weather-App/',
+    github: 'https://github.com/bd2187/Local-Weather-App'
   }
 ];
 
