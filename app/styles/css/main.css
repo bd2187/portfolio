@@ -416,7 +416,6 @@ ul {
 }
 
 body {
-  background: green;
   padding-top: 34px;
 }
 
@@ -435,9 +434,16 @@ a {
 }
 
 .container {
-  background: yellow;
-  width: 95%;
+  background: #EDEDED;
   margin: 0 auto;
+}
+
+.category-title {
+  text-align: center;
+  margin: 1em 0;
+  padding-bottom: .3em;
+  border-bottom: 2px solid #3C489C;
+  color: #3C489C;
 }
 
 .nav-bar .nav-links {
@@ -452,7 +458,7 @@ a {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background: orange;
+  background: #D45658;
   position: fixed;
   left: 0;
   top: 0;
@@ -463,13 +469,13 @@ a {
   display: inline-block;
   padding: .5em;
   color: #fff;
-  -webkit-transition: color .5s;
-  -o-transition: color .5s;
-  transition: color .5s;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .nav-bar .nav-links a:hover {
-  color: blue;
+  color: #d1d1d1;
 }
 
 .nav-bar .active {
@@ -503,12 +509,9 @@ a {
   font-size: 1.5em;
 }
 
-.project-list {
-  background: pink;
-}
-
 .project-list li {
   background: red;
+  border: 1px solid black;
   margin-bottom: 1em;
   text-align: center;
 }
@@ -529,7 +532,6 @@ a {
 }
 
 .contact {
-  background: pink;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -557,8 +559,12 @@ a {
 
 .contact .contact-links a {
   font-size: 3.12em;
-  background: orange;
+  color: #D45658;
+  background: #3C489C;
   display: inline-block;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   text-align: center;
   vertical-align: center;
   border-radius: 100%;
@@ -578,12 +584,25 @@ a {
   justify-content: center;
 }
 
+.contact .contact-links a:hover {
+  color: #3C489C;
+  background: #D45658;
+}
+
 .footer {
   text-align: center;
+  font-size: .8em;
+  font-weight: bold;
+  color: #99a1d8;
+  padding: .5em 0;
+  background: #3C489C;
+  line-height: 1.5;
 }
 
 .content {
-  min-height: calc(100vh - 52px);
-  /* 34px(Nav) + 18px(footer)*/
+  width: 95%;
+  margin: 0 auto;
+  min-height: calc(100vh - 84.78px);
+  /* 34px(Nav) + 50.78px(footer)*/
   padding: 1em 0;
 }

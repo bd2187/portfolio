@@ -1,9 +1,25 @@
 @import  'normalize';
 
+//variables
+$lightRed: #D45658;
+$blue: #3C489C;
+$offWhite: #EDEDED;
+$transitionTime: .5s;
+
+
 .container {
-  background: yellow;
-  width: 95%;
+  // background: #fff;
+  background: $offWhite;
+  // width: 95%;
   margin: 0 auto;
+}
+
+.category-title {
+  text-align: center;
+  margin: 1em 0;
+  padding-bottom: .3em;
+  border-bottom: 2px solid $blue;
+  color: $blue;
 }
 
 .nav-bar {
@@ -11,7 +27,7 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    background: orange;
+    background: $lightRed;
 
     position: fixed;
     left: 0;
@@ -22,9 +38,9 @@
       display: inline-block;
       padding: .5em;
       color: #fff;
-      transition: color .5s;
+      transition: color $transitionTime;
       &:hover {
-        color: blue;
+        color: darken(#fff, 18%);
       }
     } // end a
   }
@@ -51,9 +67,9 @@
 }
 
 .project-list {
-  background: pink;
   li {
     background: red;
+    border: 1px solid black;
     margin-bottom: 1em;
     text-align: center;
   }
@@ -73,8 +89,6 @@
 }
 
 .contact {
-  background: pink;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,8 +98,10 @@
     justify-content: space-around;
     a {
       font-size: 3.12em;
-      background: orange;
+      color: $lightRed;
+      background: $blue;
       display: inline-block;
+      transition: all $transitionTime;
 
       text-align: center;
       vertical-align: center;
@@ -95,16 +111,29 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      &:hover {
+        color: $blue;
+        background: $lightRed;
+      }
     }
   }
 }
 
 .footer {
   text-align: center;
+  font-size: .8em;
+  font-weight: bold;
+  color: lighten($blue, 30%);
+  padding: .5em 0;
+  background: $blue;
+  line-height: 1.5;
 }
 
 .content {
   // Sticky footer
-  min-height: calc(100vh - 52px); /* 34px(Nav) + 18px(footer)*/
+  width: 95%;
+  margin: 0 auto;
+  min-height: calc(100vh - 84.78px); /* 34px(Nav) + 50.78px(footer)*/
   padding: 1em 0;
 }

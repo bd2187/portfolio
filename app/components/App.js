@@ -24,7 +24,11 @@ class App extends Component {
             <Route path="/about" component={About}/>
             <Route path="/contact" component={Contact}/>
           </Switch>
-        <p className="footer">Copyright &copy; Brandon Dionisio 2017</p>
+        <p className="footer">
+          {'brandon.dionisio.26@gmail.com'}
+          <br />
+          {'Copyright &copy; Brandon Dionisio 2017'}
+        </p>
         </div>
       </Router>
     );
