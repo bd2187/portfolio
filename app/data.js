@@ -9,6 +9,13 @@ var projects = [
     github: 'https://github.com/bd2187/react-tube'
   },
   {
+    title: 'Markdown Previewer',
+    thumbnail: 'markdown.png',
+    tech: ['HTML', 'CSS/SASS', 'Javascript', 'React', 'Redux'],
+    link: 'https://markdown-previewer-436ba.firebaseapp.com/',
+    github: 'https://github.com/bd2187/github-markdown-previewer'
+  },
+  {
     title: 'Twitch TV',
     thumbnail: 'twitch.png',
     tech: ['HTML', 'CSS/SASS', 'Javascript', 'AJAX'],

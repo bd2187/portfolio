@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-function parseTech(tech, index, array) {
+function addComma(tech, index, array) {
   if (index === 0) {
     return `${tech}, `;
   }
@@ -14,40 +14,50 @@ function parseTech(tech, index, array) {
   }
 }
 
+function ThumbnailBox({title, thumbnail, link}) {
+  return (
+    <div className="thumbnail-box">
+      <Link
+        to={link}
+        target="_blank"
+        className="project-link"
+      >
+        <img
+          className="thumbnail"
+          src={require(`../assets/${thumbnail}`)}
+          alt={`Thumbnail for ${title} project`}/>
+      </Link>
+
+      <Link
+        to={link}
+        target="_blank"
+        className="project-link overlay"
+      >
+        <div className="overlayText">
+          View Project
+        </div>
+      </Link>
+    </div>
+  )
+}
+
+function ProjectInfoBox({title, tech, github}) {
+  return (
+    <div className="project-info-box">
+      <h3>{title}</h3>
+      <p>{tech.map(addComma)}</p>
+      <a href={github} target="_blank">
+        <i className="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  )
+}
+
 function Project({title, thumbnail, tech, link, github}) {
   return (
     <li>
-      <div className="thumbnail-box">
-        <Link
-          to={link}
-          target="_blank"
-          className="project-link"
-        >
-          <img
-            className="thumbnail"
-            src={require(`../assets/${thumbnail}`)}
-            alt={`Thumbnail for ${title} project`}/>
-        </Link>
-
-        <Link
-          to={link}
-          target="_blank"
-          className="project-link overlay"
-        >
-          <div className="overlayText">
-            View Project
-          </div>
-        </Link>
-
-
-      </div>
-      <div className="project-info-box">
-        <h3>{title}</h3>
-        <p>{tech.map(parseTech)}</p>
-        <a href={github} target="_blank">
-          <i className="fa fa-github" aria-hidden="true"></i>
-        </a>
-      </div>
+      <ThumbnailBox title={title} thumbnail={thumbnail} link={link}/>
+      <ProjectInfoBox title={title} tech={tech} github={github}/>
     </li>
   );
 }
