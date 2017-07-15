@@ -1,0 +1,36 @@
+// mixins
+@mixin animation($seconds) {
+  -webkit-animation: AnimationName $seconds ease infinite;
+  -moz-animation: AnimationName $seconds ease infinite;
+  -o-animation: AnimationName $seconds ease infinite;
+  animation: AnimationName $seconds ease infinite;
+}
+
+@mixin keyframes {
+  @-webkit-keyframes AnimationName {
+      0%{background-position:70% 0%}
+      50%{background-position:31% 100%}
+      100%{background-position:70% 0%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:70% 0%}
+      50%{background-position:31% 100%}
+      100%{background-position:70% 0%}
+  }
+  @-o-keyframes AnimationName {
+      0%{background-position:70% 0%}
+      50%{background-position:31% 100%}
+      100%{background-position:70% 0%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:70% 0%}
+      50%{background-position:31% 100%}
+      100%{background-position:70% 0%}
+  }
+}
+
+@mixin flexbox($justifyContent, $flexDirection) {
+  display: flex;
+  justify-content: $justifyContent;
+  flex-direction: $flexDirection;
+}
