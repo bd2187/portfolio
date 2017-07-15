@@ -27,7 +27,6 @@ function ThumbnailBox({title, thumbnail, link}) {
           src={require(`../assets/${thumbnail}`)}
           alt={`Thumbnail for ${title} project`}/>
       </Link>
-
       <Link
         to={link}
         target="_blank"
@@ -41,6 +40,12 @@ function ThumbnailBox({title, thumbnail, link}) {
   )
 }
 
+ThumbnailBox.propTypes = {
+  title: PropTypes.string.isRequired,
+  thumbnail: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
+};
+
 function ProjectInfoBox({title, tech, github}) {
   return (
     <div className="project-info-box">
@@ -53,6 +58,12 @@ function ProjectInfoBox({title, tech, github}) {
   )
 }
 
+ProjectInfoBox.propTypes = {
+  title: PropTypes.string.isRequired,
+  tech: PropTypes.array.isRequired,
+  github: PropTypes.string.isRequired
+};
+
 function Project({title, thumbnail, tech, link, github}) {
   return (
     <li>
@@ -61,5 +72,13 @@ function Project({title, thumbnail, tech, link, github}) {
     </li>
   );
 }
+
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  thumbnail: PropTypes.string.isRequired,
+  tech: PropTypes.array.isRequired,
+  link: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+};
 
 export default Project;
