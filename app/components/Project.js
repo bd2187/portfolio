@@ -28,6 +28,18 @@ function Project({title, thumbnail, tech, link, github}) {
             src={require(`../assets/${thumbnail}`)}
             alt={`Thumbnail for ${title} project`}/>
         </Link>
+
+        <Link
+          to={link}
+          target="_blank"
+          className="project-link overlay"
+        >
+          <div className="overlayText">
+            View Project
+          </div>
+        </Link>
+
+
       </div>
       <div className="project-info-box">
         <h3>{title}</h3>
