@@ -5,6 +5,7 @@ import About from './About';
 import Contact from './Contact';
 import Nav from './Nav';
 import Footer from './Footer';
+import NotFound from './NotFound';
 
 import {
   BrowserRouter as Router,
@@ -26,6 +27,7 @@ class App extends Component {
             <Route path="/work" component={Work}/>
             <Route path="/about" component={About}/>
             <Route path="/contact" component={Contact}/>
+            <Route component={NotFound} />
           </Switch>
         <Footer />
         </div>
