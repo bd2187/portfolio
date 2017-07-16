@@ -10,7 +10,7 @@
 
 .category-title {
   width: 4em;
-  max-width: 160px;
+  max-width: 180px;
   margin: .5em auto;
   padding-bottom: .1em;
 
@@ -20,6 +20,7 @@
   color: $blue;
   font-size: 2.5em;
   font-weight: 300;
+  @include mediaQuery(600px) { font-size: 3em;}
 }
 
 .nav-bar {
@@ -104,6 +105,8 @@
 } // end .banner
 
 .project-list {
+  max-width: 1200px;
+  margin: 0 auto;
   li, a {
     color: $darkGrey;
     font-weight: 300;
@@ -121,7 +124,7 @@
     text-align: center;
     line-height: 1.5;
 
-    h3 { font-size: 1.3em; }
+    h3 { font-size: 1.12em; }
     p { font-size: .9em; }
 
     transition: box-shadow $transitionTime;
@@ -133,12 +136,6 @@
     @include mediaQuery(990px) { flex-basis: 30%; }
   } // end li
 
-  @include mediaQuery(700px) {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
   .project-info-box { padding: .3em 0; }
 
   .fa-github {
@@ -147,6 +144,12 @@
     &:hover {
       color: $lightRed;
     }
+  }
+
+  @include mediaQuery(700px) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 } // end .project-list
 
@@ -175,8 +178,8 @@
   .overlayText {
     font-family: "Oswald";
     color: #000;
-    font-size: 1.12em;
-    padding: .8em;
+    font-size: 1em;
+    padding: .5em;
     border-radius: 5px;
     border: 3px solid #000;
   }
@@ -192,24 +195,44 @@
   } // end .thumbnail-box
 }
 
-.about {
+.about-box {
+  max-width: 675px;
+  margin: 0 auto;
   .profile-photo {
     width: 40%;
+    max-width: 232px;
     border-radius: 50%;
     display: block;
     margin: 1em auto;
+    background: orange;
   }
 
   .about-me {
+    margin: 0 auto;
+    max-width: 502px;
     text-align: center;
     line-height: 1.5;
     font-size: 1.112em;
     color: $darkGrey;
+    // background: orange;
+    @include mediaQuery(600px) { padding: 0 2em; }
+  }
+  // background: green;
+  @include mediaQuery(600px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .about-me, .profile-photo {
+      width: 50%;
+    }
+
   }
 } // end .about
 
 
 .contact {
+  // background: red;
+  max-width: 477px;
   @include flexbox(center, column);
 
   .contact-links {
@@ -232,7 +255,12 @@
         color: $blue;
         background: $lightRed;
       }
-    }
+
+      @include mediaQuery(600px) {
+        font-size: 3.5em;
+        padding: .6em;
+      }
+    } // end a
   }
 } // end .contact
 
