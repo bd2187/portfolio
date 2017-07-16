@@ -4,12 +4,15 @@ import Work from './Work';
 import About from './About';
 import Contact from './Contact';
 import Nav from './Nav';
+import Footer from './Footer';
 
 import {
   BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
+
+
 
 class App extends Component {
   render() {
@@ -24,11 +27,7 @@ class App extends Component {
             <Route path="/about" component={About}/>
             <Route path="/contact" component={Contact}/>
           </Switch>
-        <p className="footer">
-          {'brandon.dionisio.26@gmail.com'}
-          <br />
-          Copyright &copy; Brandon Dionisio 2017
-        </p>
+        <Footer />
         </div>
       </Router>
     );
