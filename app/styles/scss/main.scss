@@ -83,6 +83,7 @@
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: -4px;
+    @include mediaQuery(900px) { font-size: 7em; }
   }
 
   h2 {
@@ -90,6 +91,7 @@
     text-align: center;
     letter-spacing: 1.2px;
     font-weight: 300;
+    @include mediaQuery(900px) { font-size: 1.8em; }
   }
 
   .line {
@@ -127,6 +129,14 @@
     &:hover {
       box-shadow: 0px 3px 30px rgba(0,0,0,0.7);
     }
+    @include mediaQuery(600px) { flex-basis: 45%; }
+    @include mediaQuery(990px) { flex-basis: 30%; }
+  } // end li
+
+  @include mediaQuery(700px) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   .project-info-box { padding: .3em 0; }
@@ -238,6 +248,7 @@
 
 .content {
   width: 90%;
+  // background: red;
   margin: 0 auto;
   // Sticky footer
   min-height: calc(100vh - 84.78px); /* 34px(Nav) + 50.78px(footer)*/
