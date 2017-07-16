@@ -28,6 +28,8 @@
     align-items: flex-start;
     background: $lightRed;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 
     position: fixed;
     left: 0;
@@ -44,7 +46,17 @@
         color: $blue;
       }
     } // end a
-  }
+
+    @include mediaQuery(700px) {
+      @include flexbox(flex-end, row);
+      li {
+        margin-right: 1.5em;
+        &:last-child {
+          margin-right: 1em;
+        }
+      }
+    }
+  } // end .nav-links
   .active { border-bottom: 4px solid $offWhite; }
 }
 

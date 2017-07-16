@@ -55,7 +55,7 @@ function ProjectInfoBox({title, tech, github}) {
         <i className="fa fa-github" aria-hidden="true"></i>
       </a>
     </div>
-  )
+  );
 }
 
 ProjectInfoBox.propTypes = {

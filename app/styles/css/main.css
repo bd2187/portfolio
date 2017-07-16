@@ -471,6 +471,8 @@ a {
   background: #D45658;
   -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
   position: fixed;
   left: 0;
   top: 0;
@@ -489,6 +491,30 @@ a {
 
 .nav-bar .nav-links a:hover {
   color: #3C489C;
+}
+
+@media screen and (min-width: 700px) {
+  .nav-bar .nav-links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .nav-bar .nav-links li {
+    margin-right: 1.5em;
+  }
+  .nav-bar .nav-links li:last-child {
+    margin-right: 1em;
+  }
 }
 
 .nav-bar .active {
