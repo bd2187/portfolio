@@ -196,15 +196,22 @@
 }
 
 .about-box {
-  max-width: 675px;
+  max-width: 1113px;
   margin: 0 auto;
+
+  .profile-photo,
+  .about-me,
+  .skills-box {
+    margin: 1.5em auto;
+  }
+
   .profile-photo {
     width: 40%;
     max-width: 232px;
-    border-radius: 50%;
+    border-radius: 10px;
     display: block;
-    margin: 1em auto;
-    background: orange;
+    // margin: 1em auto;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
   }
 
   .about-me {
@@ -215,17 +222,43 @@
     font-size: 1.112em;
     color: $darkGrey;
     // background: orange;
-    @include mediaQuery(600px) { padding: 0 2em; }
+    // @include mediaQuery(600px) { padding: 0 2em; }
   }
+
+  .skills-box {
+    // background: yellow;
+    max-width: 180px;
+    width: 40%;
+    display: block;
+    text-align: center;
+    .skillsHeader {
+      color: $blue;
+      font-size: 1.5em;
+      padding-bottom: 2px;
+      max-width: 100px;
+      border-bottom: 2px solid $blue;
+      margin: .5em auto;
+      // background: blue;
+    }
+    .skillsList {
+      font-size: 1.12em;
+      color: $darkGrey;
+    }
+  }
+
   // background: green;
-  @include mediaQuery(600px) {
+
+  @include mediaQuery(800px) {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     .about-me, .profile-photo {
       width: 50%;
     }
-
+    .skills-box {
+      // width: 100%;
+      // max-width: none;
+    }
   }
 } // end .about
 
@@ -292,4 +325,11 @@
   // Sticky footer
   min-height: calc(100vh - 84.78px); /* 34px(Nav) + 50.78px(footer)*/
   padding: 1em 0;
+}
+
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
 }

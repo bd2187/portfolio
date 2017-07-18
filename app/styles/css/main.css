@@ -786,17 +786,23 @@ a {
 }
 
 .about-box {
-  max-width: 675px;
+  max-width: 1113px;
   margin: 0 auto;
+}
+
+.about-box .profile-photo,
+.about-box .about-me,
+.about-box .skills-box {
+  margin: 1.5em auto;
 }
 
 .about-box .profile-photo {
   width: 40%;
   max-width: 232px;
-  border-radius: 50%;
+  border-radius: 10px;
   display: block;
-  margin: 1em auto;
-  background: orange;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .about-box .about-me {
@@ -808,13 +814,28 @@ a {
   color: #3D3D3D;
 }
 
-@media screen and (min-width: 600px) {
-  .about-box .about-me {
-    padding: 0 2em;
-  }
+.about-box .skills-box {
+  max-width: 180px;
+  width: 40%;
+  display: block;
+  text-align: center;
 }
 
-@media screen and (min-width: 600px) {
+.about-box .skills-box .skillsHeader {
+  color: #3C489C;
+  font-size: 1.5em;
+  padding-bottom: 2px;
+  max-width: 100px;
+  border-bottom: 2px solid #3C489C;
+  margin: .5em auto;
+}
+
+.about-box .skills-box .skillsList {
+  font-size: 1.12em;
+  color: #3D3D3D;
+}
+
+@media screen and (min-width: 800px) {
   .about-box {
     display: -webkit-box;
     display: -webkit-flex;
@@ -824,10 +845,10 @@ a {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .about-box .about-me, .about-box .profile-photo {
     width: 50%;
@@ -950,4 +971,10 @@ a {
   min-height: calc(100vh - 84.78px);
   /* 34px(Nav) + 50.78px(footer)*/
   padding: 1em 0;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
 }
