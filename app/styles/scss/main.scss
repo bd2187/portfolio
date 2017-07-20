@@ -202,33 +202,38 @@
   .profile-photo,
   .about-me,
   .skills-box {
-    margin: 1.5em auto;
+    margin: 2em auto;
   }
 
   .profile-photo {
-    width: 40%;
+    width: 100%;
     max-width: 232px;
     border-radius: 10px;
     display: block;
     // margin: 1em auto;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+    background: pink;
   }
 
   .about-me {
     margin: 0 auto;
     max-width: 502px;
-    text-align: center;
+    text-align: left;
     line-height: 1.5;
     font-size: 1.112em;
     color: $darkGrey;
-    // background: orange;
-    // @include mediaQuery(600px) { padding: 0 2em; }
+    p { margin: .3em 0; }
+    a {
+      color: $lightRed;
+      &:hover {
+        color: $blue;
+        text-decoration: underline;
+      }
+    }
   }
 
   .skills-box {
-    // background: yellow;
-    max-width: 180px;
-    width: 40%;
+    width: 180px;
     display: block;
     text-align: center;
     .skillsHeader {
@@ -238,7 +243,6 @@
       max-width: 100px;
       border-bottom: 2px solid $blue;
       margin: .5em auto;
-      // background: blue;
     }
     .skillsList {
       font-size: 1.12em;
@@ -246,18 +250,16 @@
     }
   }
 
-  // background: green;
-
-  @include mediaQuery(800px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .about-me, .profile-photo {
-      width: 50%;
-    }
-    .skills-box {
-      // width: 100%;
-      // max-width: none;
+  @include mediaQuery(900px) {
+    .about-me-box {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 923px;
+      justify-content: space-around;
+      align-items: center;
+      display: flex;
+      .about-me {margin: 0};
+      .profile-photo{ margin: 0; }
     }
   }
 } // end .about
