@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -64,14 +65,27 @@ ProjectInfoBox.propTypes = {
   github: PropTypes.string.isRequired
 };
 
-function Project({title, thumbnail, tech, link, github}) {
-  return (
-    <li>
-      <ThumbnailBox title={title} thumbnail={thumbnail} link={link}/>
-      <ProjectInfoBox title={title} tech={tech} github={github}/>
-    </li>
-  );
+class Project extends Component {
+  componentDidMount() {
+    var li = ReactDOM.findDOMNode(this);
+    li.style.opacity = 0;
+    window.requestAnimationFrame(function(){
+      li.style.transition = "opacity 1500ms";
+      li.style.opacity = 1;
+    });
+  }
+  render() {
+    const {title, thumbnail, tech, link, github} = this.props;
+    return (
+      <li>
+        <ThumbnailBox title={title} thumbnail={thumbnail} link={link}/>
+        <ProjectInfoBox title={title} tech={tech} github={github}/>
+      </li>
+    );
+  }
 }
+
+
 
 Project.propTypes = {
   title: PropTypes.string.isRequired,
