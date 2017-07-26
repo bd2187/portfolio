@@ -27,7 +27,7 @@ function About() {
             <li>CSS3</li>
             <li>Sass</li>
             <li>Responsive Design</li>
-            <li>JavaScript</li>
+            <li>JavaScript/ES6</li>
             <li>AJAX</li>
             <li>React JS</li>
             <li>Redux</li>
