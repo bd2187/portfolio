@@ -2,6 +2,13 @@
 
 var projects = [
   {
+    title: 'Netflix Clone',
+    thumbnail: 'netflix.png',
+    tech: ['HTML', 'CSS/SASS', 'Javascript', 'AJAX', 'React', 'Redux', 'Bootstrap'],
+    link: 'https://netflix-clone-daca7.firebaseapp.com/',
+    github: 'https://github.com/bd2187/netflix-clone'
+  },
+  {
     title: 'Youtube Clone',
     thumbnail: 'youtube.png',
     tech: ['HTML', 'CSS/SASS', 'Javascript', 'AJAX', 'React'],
