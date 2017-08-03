@@ -7,7 +7,7 @@ class Contact extends Component {
       <div className="contact content">
         <ul className="contact-links">
           <li>
-            <a href="mailto:brandon.dionisio@yahoo.com">
+            <a href="mailto:brandon.dionisio.26@gmail.com">
               <i className="fa fa-envelope-o" aria-hidden="true"></i>
             </a>
           </li>
