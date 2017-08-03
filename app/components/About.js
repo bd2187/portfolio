@@ -23,14 +23,16 @@ function About() {
         <div className="skills-box">
           <h3 className="skillsHeader">Skills:</h3>
           <ul className="skillsList">
+            <li>JavaScript/ES6</li>
+            <li>React JS</li>
+            <li>Redux</li>
             <li>HTML5</li>
             <li>CSS3</li>
             <li>Sass</li>
             <li>Responsive Design</li>
-            <li>JavaScript/ES6</li>
             <li>AJAX</li>
-            <li>React JS</li>
-            <li>Redux</li>
+            <li>Webpack</li>
+            <li>Git</li>
           </ul>
         </div>
       </div>

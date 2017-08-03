@@ -12,7 +12,7 @@ class Contact extends Component {
             </a>
           </li>
           <li>
-            <Link to="#" target="_blank">
+            <Link to="https://www.linkedin.com/in/bd2187/" target="_blank">
               <i className="fa fa-linkedin" aria-hidden="true"></i>
             </Link>
           </li>
