@@ -69,7 +69,7 @@ var projects = [
     thumbnail: 'fcc_leaders.png',
     tech: ['HTML', 'CSS/SASS', 'Javascript', 'AJAX', 'React'],
     link: 'https://fcc-leaderboard-580e0.firebaseapp.com',
-    github: 'https://github.com/bd2187/github-battle'
+    github: 'https://github.com/bd2187/fcc-leaderboard'
   }
 ];
 
