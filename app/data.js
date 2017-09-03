@@ -1,10 +1,18 @@
-"use strict";
+'use strict';
 
 var projects = [
   {
     title: 'Netflix Clone',
     thumbnail: 'netflix.png',
-    tech: ['HTML', 'CSS/SASS', 'Javascript', 'AJAX', 'React', 'Redux', 'Bootstrap'],
+    tech: [
+      'HTML',
+      'CSS/SASS',
+      'Javascript',
+      'AJAX',
+      'React',
+      'Redux',
+      'Bootstrap'
+    ],
     link: 'https://netflix-clone-daca7.firebaseapp.com/',
     github: 'https://github.com/bd2187/netflix-clone'
   },
@@ -21,6 +29,13 @@ var projects = [
     tech: ['HTML', 'CSS/SASS', 'Javascript', 'AJAX', 'React'],
     link: 'https://bd2187.github.io/react-giph/',
     github: 'https://github.com/bd2187/react-giph'
+  },
+  {
+    title: 'Ethereum History Chart',
+    thumbnail: 'eth.png',
+    tech: ['HTML', 'CSS', 'Javascript', 'AJAX', 'React', 'Chart JS'],
+    link: 'https://stunning-choir-167523.firebaseapp.com/',
+    github: 'https://github.com/bd2187/eth_price_history'
   },
   {
     title: 'Weather App',
