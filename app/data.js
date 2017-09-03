@@ -33,7 +33,7 @@ var projects = [
     title: 'Portfolio',
     thumbnail: 'portfolio.png',
     tech: ['HTML', 'CSS/SASS', 'Javascript', 'React'],
-    link: '#',
+    link: 'https://portfolio-8aaeb.firebaseapp.com/',
     github: 'https://github.com/bd2187/portfolio'
   },
   {
