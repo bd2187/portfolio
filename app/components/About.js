@@ -11,7 +11,7 @@ function About() {
           <div className="about-me">
             <p>
               {
-                "Hi! I'm Brandon, a Front End Web Developer based in Los Angeles, CA. I build and maintain applications using Javascript and React JS. I'm currently learning how to combine my Front End skills with Back End technologies."
+                "Hi! I'm Brandon, a Front End Web Developer based in Los Angeles, CA. I build and maintain web applications using Javascript and React JS."
               }
             </p>
           </div>
