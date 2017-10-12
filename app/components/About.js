@@ -24,8 +24,11 @@ function About() {
               <a href="https://www.udemy.com/" target="_blank">
                 Udemy
               </a>
+              {'.'}
+            </p>
+            <p>
               {
-                '. The opportunity to practice and develop my problem-solving and creativity skills brought me to the tech industry. My enthusiasm and desire to learn fuels my passion to build and maintain applications.'
+                "I specialize in developing user interfaces with the core Front End technologies of HTML, CSS, and Javascript. Many of my applications were built with React and Redux. I've expanded my interestes to Back End Development in order to build full stack applications. Most of my days consist of building and maintaing my applications while learning Node JS."
               }
             </p>
             <p>
