@@ -28,7 +28,7 @@ function About() {
             </p>
             <p>
               {
-                "I specialize in developing user interfaces with the core Front End technologies of HTML, CSS, and Javascript. Many of my applications were built with React and Redux. Recently, I've expanded my interestes to Back End Development in order to build full stack applications. Most of my days consist of building and maintaing my applications while learning Node JS."
+                "I specialize in developing user interfaces with the core Front End technologies of HTML, CSS, and Javascript. Many of my applications were built with React and Redux. Recently, I've expanded my interests to Back End Development in order to build full stack applications. Most of my days consist of building and maintaing my applications while learning Node JS."
               }
             </p>
             <p>
