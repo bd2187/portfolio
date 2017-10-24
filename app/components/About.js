@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import profilePic from '../assets/brandon.jpg';
+import React, { Component } from "react";
+import profilePic from "../assets/brandon.jpg";
 
 function About() {
   return (
@@ -16,29 +16,20 @@ function About() {
               <a href="https://www.freecodecamp.com" target="_blank">
                 Freecodecamp
               </a>
-              {', '}
+              {", "}
               <a href="https://teamtreehouse.com/" target="_blank">
                 TeamTreehouse
               </a>
-              {', and '}
+              {", and "}
               <a href="https://www.udemy.com/" target="_blank">
                 Udemy
               </a>
-              {'.'}
+              {"."}
             </p>
             <p>
               {
                 "I specialize in developing user interfaces with the core Front End technologies of HTML, CSS, and Javascript. Many of my applications were built with React and Redux. Recently, I've expanded my interests to Back End Development in order to build full stack applications. Most of my days consist of building and maintaing my applications while learning Node JS."
               }
-            </p>
-            <p>
-              {
-                "I'm currently seeking a Junior Developer position to practice my skills and grow as a developer. You can contact me at "
-              }
-              <a href="mailto:brandon.dionisio@yahoo.com">
-                {'brandon.dionisio.26@gmail.com'}
-              </a>
-              {'.'}
             </p>
           </div>
         </div>
